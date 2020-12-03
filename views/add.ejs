@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/index.js"></script>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+
+
+    <title>Hotels</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navlinks">
+            <a href="#" class="links">Home</a>
+            <a href="/hotels" class="links">Hotels</a>
+            <a href="/add" class="links">Add Hotel</a>
+            <a href="/delete" class="links">Add Hotel</a>
+        </div>
+    </nav>
+
+    <section id="search">
+            <h3 class="searchText">Adding Hotel</h3>
+        <form  class="AddingForm" method="POST" action="/hotels/add">        
+        
+        <input type="text" placeholder="Name hotel" name="nameHotel"/>
+        <input type="text" placeholder="Price" name="priceHotel"/>
+        <input type="text" placeholder="Url imagen" name="imageHotel"/>
+        <div class="containerCheckbox">
+            <label> ⭐    :  </label>
+                <label class="checkFlex" name="stars">5   
+                <input type="radio"value="5" name="stars">   
+                </label >
+                <label class="checkFlex" name="stars">4
+                    <input type="radio"  value="4" name="stars">
+                </label>    
+                <label class="checkFlex" name="stars" >3
+                    <input type="radio" value="3" name="stars">
+                </label>    
+                <label class="checkFlex" name="stars">2
+                    <input type="radio"value="2" name="stars">
+                </label>    
+                <label class="checkFlex" name="stars">1
+                    <input type="radio" value="1" name="stars">
+                </label>
+                
+        
+        </div>
+        <!--
+        <div class="range">
+
+            <label style="padding-right:20px;" name="range">Precio maximo:</label>
+                <input type="range" name="range" id="Range1" value="1596" min="800" max="1596" 
+                onchange="document.getElementById('Label1').innerHTML = this.value" />
+            <label id="Label1" style="padding-left:20px;"></label>
+
+        </div>
+        -->
+
+        
+        <input type="submit" value="Add Hotel"/>
+        </form>
+
+    </section>
+                 
+</body>
+</html>
